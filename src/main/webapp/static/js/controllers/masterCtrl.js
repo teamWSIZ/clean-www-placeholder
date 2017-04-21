@@ -50,7 +50,7 @@ angular.module('myApp.controllers').controller('masterCtrl',
             // $scope.loadArray();
             // $scope.cleanItem();
 
-            console.log('items:' + $scope.items);
+            console.log('items:' + $scope.M.items);
 
         }
     ]

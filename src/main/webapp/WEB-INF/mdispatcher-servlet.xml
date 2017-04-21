@@ -12,6 +12,14 @@
     <context:component-scan base-package="controller"/>
 
     <!--Location of webapp-->
-    <mvc:resources mapping="/**" location="/static/"/>
+    <mvc:resources mapping="/**" location="/static/">
+        <mvc:resource-chain resource-cache="true">
+            <mvc:resolvers>
+                <mvc:version-resolver>
+                    <mvc:content-version-strategy patterns="/**"/>
+                </mvc:version-resolver>
+            </mvc:resolvers>
+        </mvc:resource-chain>
+    </mvc:resources>
 
 </beans>

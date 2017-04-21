@@ -22,7 +22,7 @@ app.run(function ($rootScope) {
     //Root bag object; put objects which should persist between views here
     $rootScope.R = {};
     //Global properties
-    $rootScope.R.URL = 'https://localhost:8443';
+    $rootScope.R.URL = 'https://localhost:8443'; //!
 
     //Using references and objects...
     $rootScope.users = [
